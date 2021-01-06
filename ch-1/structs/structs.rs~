@@ -1,0 +1,40 @@
+
+
+// Unit Structs
+// Zero sized Value
+struct Dummy;
+
+
+// tuple struct
+
+struct Color(u8,u8,u8);
+
+
+
+// Usual struct
+
+struct Player{
+    name :String,
+    iq:u8,
+    friends:u8,
+    score:u16
+}
+
+
+fn bump_player_score(mut player:Player, score:u16){
+
+    player.score += score;
+    println!("Name : {}",player.name);
+    println!("IQ {}",player.iq);
+    println!("Score {}",player.score);
+    println!();
+    println!();
+}
+
+fn main(){
+
+    let orange = Color(255,165,0),
+
+    let (a,b,c) = orange;
+    
+}
